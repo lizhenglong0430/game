@@ -60,7 +60,7 @@ class Main {
       sunTimer: null,                            // 全局定时器，用于控制全局定时生成阳光
       sunTimer_difference: 20,                   // 定时生成阳光时间差值（单位：秒）
       zombieTimer: null,                         // 全局定时器，用于控制全局定时生成僵尸
-      zombieTimer_difference: 12,                // 定时生成僵尸时间差值（单位：秒）
+      zombieTimer_difference: 5,                // 定时生成僵尸时间差值（单位：秒）
       game: null,                                // 游戏引擎对象
       fps: 60,
     }
@@ -71,7 +71,8 @@ class Main {
     let self = this,
         iMax = self.zombies_iMax
     for (let i = 0; i < iMax; i++) {
-      let row = Math.ceil(Math.random() * 4 + 1)
+      let row = Math.ceil(Math.random() * 5 )
+      console.log('我是行坐标:',row);
       self.zombies_info.position.push({
         section: 'zombie',
         row: row,
@@ -115,7 +116,7 @@ class Main {
         // 重新设置系统阳光定位
         document.getElementsByClassName('systemSun')[0].style.left = Math.floor(Math.random() * 200 + 300) + 'px'
         document.getElementsByClassName('systemSun')[0].style.top = '-100px'
-      }, 2700)
+      }, 7700)
     }, 1000 * self.sunTimer_difference)
     // 设置生成僵尸定时器
     self.zombieTimer = setInterval(function () {

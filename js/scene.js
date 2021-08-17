@@ -644,7 +644,7 @@ class Zombie extends Role{
     super(obj)
     // 僵尸类私有属性
     let z = {
-      life: 10,                                            // 角色血量
+      life: 100,                                            // 角色血量
       canMove: true,                                       // 判断当前角色是否可移动
       attackPlantID: 0,                                    // 当前攻击植物对象 ID
       idle: null,                                          // 站立动画对象
@@ -661,7 +661,7 @@ class Zombie extends Role{
       state_DYING: 5,                                      // 濒临死亡状态
       state_DIE: 6,                                        // 死亡状态
       state_DIGEST: 7,                                     // 消化死亡状态
-      speed: 3,                                            // 移动速度
+      speed: 6,                                            // 移动速度
       head_x: 0,                                           // 头部动画 x 轴坐标
       head_y: 0,                                           // 头部动画 y 轴坐标
     }
