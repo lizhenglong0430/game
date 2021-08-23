@@ -56,7 +56,7 @@ class Main {
       },
       zombies_idx: 0,                            // 随机生成僵尸 idx
       zombies_row: 0,                            // 随机生成僵尸的行坐标
-      zombies_iMax: 60,                          // 随机生成僵尸数量上限
+      zombies_iMax: 50,                          // 随机生成僵尸数量上限
       sunTimer: null,                            // 全局定时器，用于控制全局定时生成阳光
       sunTimer_difference: 20,                   // 定时生成阳光时间差值（单位：秒）
       zombieTimer: null,                         // 全局定时器，用于控制全局定时生成僵尸
